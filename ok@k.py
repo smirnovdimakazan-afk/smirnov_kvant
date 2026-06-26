@@ -8,6 +8,6 @@ def build_query_string(base_url, **kwargs):
         args_result.append(f"{arg[0]} = {arg[1]}")
     joined_args = "&".join(args_result)
     print(joined_args)
-    return result
+    return base_url + "?" + joined_args
 
 print(build_query_string("https://api.weather.com/v1/forecast/", city="Moscow", days=3, unit="metric"))
