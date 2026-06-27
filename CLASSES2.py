@@ -1,5 +1,4 @@
 # NEW BRANCH123
-
 class Transport:
     def __init__(self, vmestimost, speed):
         self.vmestimost = vmestimost
